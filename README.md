@@ -16,16 +16,16 @@ public class Max_weight
 		int K=sc.nextInt();
 		System.out.println("enter weight of" +N+"items");
 		int a[]=new int[N];
-		for(int i=1;i<=N;i++) {
+		for(int i=0;i<N;i++) {
 			a[i]=sc.nextInt();
 		}
 		Arrays.sort(a);
 		int p1weight=0;
 		int p2weight=0;
-		for(int l=1;l<K;l++) {
+		for(int l=0;l<K;l++) {
 			p1weight=+a[l];
 		}
-		for(int z=N-K;z<=N;z++) {
+		for(int z=N-K-1;z<=N-1;z++) {
 			
 			p2weight=+a[z];
 		}
